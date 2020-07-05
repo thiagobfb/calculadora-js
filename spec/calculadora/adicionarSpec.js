@@ -2,10 +2,6 @@ describe('Suíte de Testes da Adição', () => {
    
     let Calculadora = require('../../src/js/calculadora.js');
     
-    beforeAll(() => {
-        exibirTexto = jasmine.createSpy('exibirTexto');
-    });
-
     it('deve retornar 5 para 2 e 3', () => {
         expect(Calculadora.adicionar(2,3)).toEqual(5);
     });
